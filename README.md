@@ -1,6 +1,7 @@
 # Proyecto: Sistema de Registro y Resultados de Torneo de Fútbol
 ## Descripción del Proyecto
 Este proyecto es una aplicación web diseñada para gestionar un torneo de fútbol. Permite registrar partidos entre equipos, registrar los resultados de esos partidos y visualizar los resultados registrados. Está construida utilizando React como framework de frontend, con un enfoque en el manejo de estados y componentes reutilizables. El proyecto también usa React Select para una mejor experiencia de usuario al seleccionar equipos y partidos. Acá el link publicado https://proyecto-2-estructure.netlify.app/
+- Además se sube el pdf del problema del proyecto https://github.com/Jd50153/Proyecto_2_Estructure/blob/main/src/pdf/ProblemaProyecto.pdf
 ## Lenguaje de Programación y Framework Utilizado:
 - **Lenguaje de Programación:** JavaScript (ES6+)
 - **Framework:** React.js
