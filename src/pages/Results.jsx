@@ -36,13 +36,13 @@ export const Results = () => {
 
     return (
         <div className="p-4">
-            <h1 className="text-2xl font-bold mb-4">Registro de Resultados</h1>
-            <div className="flex items-center gap-5 my-8">
+            <h1 className="lg:text-2xl text-xl font-bold mb-4">Registro de Resultados</h1>
+            <div className="grid xl:grid-cols-3 lg:grid-cols-2 items-center gap-2 my-8">
                 <Select
                     value={matchOptions.find(option => option.value === selectedMatch)} // Busca el valor seleccionado
                     onChange={(selectedOption) => setSelectedMatch(selectedOption ? selectedOption.value : null)} // Actualiza el valor del partido
                     options={matchOptions}
-                    className="w-[200px]"
+                    className="w-full"
                     placeholder="Seleccionar Partido"
                 />
                 <input
@@ -55,13 +55,13 @@ export const Results = () => {
                 <div>
                     <button
                         onClick={handleSubmitResult} // Llama la función para registrar el resultado
-                        className="p-2 bg-blue-500 rounded text-white"
+                        className="p-2 bg-blue-500 rounded text-white lg:w-auto w-full col-span-2"
                     >
                         Registrar Resultado
                     </button>
                 </div>
             </div>
-            <h2 className="text-xl font-bold mt-4">Resultados Registrados:</h2>
+            <h2 className="text-lg font-bold mt-4">Resultados Registrados:</h2>
             <ul className="list-disc pl-6">
                 {results.map((result, index) => (
                     <li key={index}>

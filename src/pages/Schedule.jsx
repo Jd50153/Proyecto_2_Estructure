@@ -17,14 +17,14 @@ export const Schedule = () => {
 
     return (
         <div className="p-4">
-            <h1 className="text-2xl font-bold mb-4">Programación de Partidos</h1>
+            <h1 className="lg:text-2xl text-xl font-bold mb-4">Programación de Partidos</h1>
             <button
                 onClick={handleGenerateMatches}
-                className="p-2 bg-green-500 rounded text-white mb-4"
+                className="p-2 bg-green-500 rounded text-white mb-4 lg:text-base text-sm"
             >
                 Generar Partidos
             </button>
-            <div className="list-disc pl-6">
+            <div className="list-disc pl-6 flex flex-col gap-8">
                 {matches.map((match , i) => (
                     <div key={i} className='flex gap-8'>
 

@@ -12,7 +12,7 @@ function App() {
   return (
     <HashRouter>
       <div className="h-screen grid place-items-center bg-gray-900 ">
-        <div className='w-[50%] min-h-[50%]'>
+        <div className='md:w-[60%] w-[95%] min-h-[50%] max-h-[80%] overflow-y-auto'>
           <Header />
           <div className='bg-white rounded-xl w-full h-full p-8'>
             <Routes>

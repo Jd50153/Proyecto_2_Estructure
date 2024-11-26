@@ -32,17 +32,17 @@ export const Header = () => {
     }
 
     return (
-        <ul className='bg-white w-full mb-4 rounded-xl flex justify-between py-4 px-9'>
-            <Link to={paths.HOME} className={`p-3 rounded-md cursor-pointer font-bold ${getClassName('/')}`}>
+        <ul className='bg-white w-full mb-4 rounded-xl py-4 px-9 grid lg:grid-cols-4 md:grid-cols-2 text-center'>
+            <Link to={paths.HOME} className={`p-3 rounded-md cursor-pointer font-bold  text-sm ${getClassName('/')}`}>
                 Registrar equipos
             </Link>
-            <button onClick={() => navigatePages(paths.SCHEDULE)} className={`p-3 rounded-md cursor-pointer font-bold ${getClassName('/schedule')}`}>
+            <button onClick={() => navigatePages(paths.SCHEDULE)} className={`p-3 rounded-md cursor-pointer font-bold  text-sm ${getClassName('/schedule')}`}>
                 Generar partidos
             </button>
-            <button onClick={() => navigatePages(paths.RESULTS)} className={`p-3 rounded-md cursor-pointer font-bold ${getClassName('/results')}`}>
+            <button onClick={() => navigatePages(paths.RESULTS)} className={`p-3 rounded-md cursor-pointer font-bold  text-sm ${getClassName('/results')}`}>
                 Resultados
             </button>
-            <button onClick={() => navigateProgress(paths.PROGRESS)} className={`p-3 rounded-md cursor-pointer font-bold ${getClassName('/progress')}`}>
+            <button onClick={() => navigateProgress(paths.PROGRESS)} className={`p-3 rounded-md cursor-pointer font-bold  text-sm ${getClassName('/progress')}`}>
                 Progreso
             </button>
         </ul>
